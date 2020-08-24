@@ -1,4 +1,4 @@
-#Pysparkfilestreaming
+# Pysparkfilestreaming
 Spark Streaming example with Pyspark
 
 
