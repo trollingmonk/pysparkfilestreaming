@@ -6,7 +6,7 @@ def main():
  a = 1
  gen = DocumentGenerator()
  while a <= 10:
-  with open(r'C:\Users\rpawar2\Spark3\datafolder\random_log{}{}.txt'.format(a,randrange(100)),'w') as writefile:
+  with open(r'C:\Spark3\datafolder\random_log{}{}.txt'.format(a,randrange(100)),'w') as writefile:
    #writefile.write(gen.paragraph())
    writefile.write(gen.sentence())
    print('creating file random_log{}{}.txt'.format(a,randrange(100)))
