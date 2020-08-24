@@ -5,7 +5,7 @@ from pyspark.streaming import StreamingContext
 def main():
  sc = SparkContext(appName='PysparkStreaming')
  ssc = StreamingContext(sc,20)
- lines = ssc.textFileStream('C:\\Users\\rpawar2\\Spark3\\datafolder\\')
+ lines = ssc.textFileStream('C:\\Spark3\\datafolder\\')
  counts = lines.flatMap(lambda line: line.split(" ")).map(lambda x: (x, 1)).reduceByKey(lambda a, b: a + b)
  counts.pprint()
  ssc.start()
